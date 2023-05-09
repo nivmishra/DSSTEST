@@ -8,7 +8,7 @@ pipeline {
     }
     stage('hello') {
       steps {
-        sh 'pwsh Install-DSS.ps1'
+        sh 'pwsh /Invoke-BackupSSASDbs.ps1'
       }
     }
   }
